@@ -1,0 +1,191 @@
+.gochi-hand-regular {
+	font-family: "Gochi Hand", cursive;
+	font-weight: 400;
+	font-style: normal;
+  }
+  .coustard-regular {
+	  font-family: "Coustard", serif;
+	  font-weight: 400;
+	  font-style: normal;
+	}
+	
+	.coustard-black {
+	  font-family: "Coustard", serif;
+	  font-weight: 900;
+	  font-style: normal;
+	}
+	
+body {
+	background: #030239;	
+}
+h1 {
+	font-family: "Gochi Hand", cursive;
+	font-size: 50px
+}
+p {
+	font-family: "Coustard", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* NAVBAR CSS START */
+.nav-item a{
+	position: relative;
+	top: px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	font-family: "Gochi Hand";
+	font-size: 35px;
+	text-shadow: -2px 4px 0px rgba(0, 0, 0, 0.17);
+}
+
+#navContainer {
+	margin-right: 65px;
+}
+.brand-img, .navbar-brand {
+	position: relative;
+	width: clamp(30px, 45vh, 75px);
+	object-fit: cover;
+	left: 25px;
+	top: px;
+}
+
+.navbar-toggler {
+	position: relative;
+	color:white !important;
+	top: px;
+}
+
+.nav-link:hover {
+	color: black !important;
+}
+
+.navbar-transparent {
+	background-color: transparent !important;
+}
+
+.nav-image{
+	width: 100%;
+	/*Makes it relative or not */
+	height: 250px;
+	object-fit: cover;
+	overflow: hidden;
+	
+}
+
+.overlay-nav {
+	padding: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;	
+}
+.navbar-toggler-icon{
+	-webkit-filter: brightness(10);
+    filter: brightness(10);
+}
+@media (max-width: 992px) {
+	#navbarNav {
+	/*fix background later*/
+	position: relative;
+	  background:url("imgs/youtube\ banner.png");
+	  border-radius: 0.5rem;
+	  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+	  padding: 1rem 0;
+	  margin-top: 0.5rem;
+	  left: 30px;
+	  padding-right: 0px;
+	}
+	.brand-img {
+		left:0px;
+	}
+	.navbar-toggler {
+		left: 30px;
+	}
+	.nav-image{
+		height: 175px;
+	}
+	
+  }
+/* NAVBAR CSS END */
+
+/* HERO CSS START */
+#HeroSection{
+	/*Muting color a bit*/
+	background-color: rgba(0, 0, 0, 0.25); 
+}
+.hero-img{
+	background-color: rgba(0, 0, 0, 0.24); 
+	color: rgba(0, 0, 0, 0.24);
+	position: relative;
+	background-image: url("imgs/heroimage.png");
+	min-height: 75vh;
+	background-position: center;
+	background-size: auto; /* Better than 300% */
+  	background-repeat: no-repeat;
+  	background-attachment: fixed; /*Makes it so that the image moves with the user */
+  	margin-top: -130px; /* Use margin instead of top */
+  	z-index: -1; 
+}
+
+@media (max-width: 768px){
+	.hero-img {
+	background-image: url("imgs/heroimagesmall.png") !important;
+	  background-attachment: scroll; /* Fixed bg doesn't work well on mobile */
+	  background-size: cover;
+	  background-position: center;
+	  overflow: hidden;
+	  min-height: 60vh;
+	  margin-top: px;
+	  background-size: 120;
+	}
+  }
+@media (max-width: 1025px) and (min-width: 769px){
+	.hero-img{
+		background-attachment: scroll; 
+		min-height: 40vh;
+		background-size: 150%;
+		background-position: center;
+	}
+}
+  /* HERO CSS END */
+.bottomCloud {
+	position: relative;
+	top: -225px;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+  /* AB ME CSS START */
+.abMeImg {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.abMeImg img {
+	box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	width: 200px;
+	padding-bottom: 15px;;
+}
+#HeroSection p {
+	top: px;
+}
+@media (min-width: 768px) {
+#AboutMeSection .container2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#AboutMeSection {
+	background-color: ;
+}
+.abMeImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+}
