@@ -114,11 +114,10 @@ p {
 /* HERO CSS START */
 #HeroSection{
 	/*Muting color a bit*/
-	background-color: rgba(0, 0, 0, 0.25); 
+	background-color: rgba(40, 8, 8, 0.127); 
 }
 .hero-img{
-	background-color: rgba(0, 0, 0, 0.24); 
-	color: rgba(0, 0, 0, 0.24);
+	
 	position: relative;
 	background-image: url("imgs/heroimage.png");
 	min-height: 75vh;
@@ -153,8 +152,9 @@ p {
   /* HERO CSS END */
 .bottomCloud {
 	position: relative;
-	top: -225px;
+	top: -200px;
 	width: 100%;
+	height: 250px;
 	object-fit: cover;
 	overflow: hidden;
 }
@@ -164,25 +164,28 @@ p {
 	display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+
 }
 .abMeImg img {
 	box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	width: 200px;
-	padding-bottom: 15px;;
 }
 #HeroSection p {
 	top: px;
 }
+
+#AboutMeSection {
+	background-color: rgb(208,68,252);
+	margin-bottom: 50px;
+}
+
 @media (min-width: 768px) {
 #AboutMeSection .container2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#AboutMeSection {
-	background-color: ;
-}
+
 .abMeImg {
 	display: flex;
 	justify-content: center;
