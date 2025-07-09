@@ -31,13 +31,13 @@ p {
 /* NAVBAR CSS START */
 .nav-item a{
 	position: relative;
-	top: px;
+	top: 3px;
 	margin-left: 15px;
 	margin-right: 15px;
-
+	
 	font-family: "Gochi Hand";
 	font-size: 35px;
-	text-shadow: -2px 4px 0px rgba(0, 0, 0, 0.17);
+	text-shadow: -2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #navContainer {
@@ -88,15 +88,33 @@ p {
 }
 @media (max-width: 992px) {
 	#navbarNav {
-	/*fix background later*/
-	position: relative;
-	  background:url("imgs/youtube\ banner.png");
-	  border-radius: 0.5rem;
-	  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-	  padding: 1rem 0;
-	  margin-top: 0.5rem;
-	  left: 30px;
-	  padding-right: 0px;
+		position: relative;
+		border-radius: 0.5rem;
+	  	/* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); */
+	  	padding: 1rem 0;
+	  	margin-top: 0.5rem;
+	  	left: 30px;
+	  	padding-right: 0px;
+	  
+	}
+	.about{
+		background: url("imgs/DropdownCloud1.png");
+		background-position: left;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+	}
+	.commission{
+		background: url("imgs/DropdownCloud2trial.png");
+		background-position: left;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.contact{
+		background: url("imgs/DropdownCloudtrial3.png");
+		background-position: left;
+		background-size:contain;
+		background-repeat: no-repeat;
 	}
 	.brand-img {
 		left:0px;
@@ -107,7 +125,6 @@ p {
 	.nav-image{
 		height: 175px;
 	}
-	
   }
 /* NAVBAR CSS END */
 
@@ -167,8 +184,10 @@ p {
 .abMeImg img {
 	box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	width: 200px;
+	margin-bottom: 50px;
 }
 #HeroSection p {
+	padding-top: 50px;
 	top: px;
 }
 
@@ -190,6 +209,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 50px;
 }
 }
 .cloud-bottom {
@@ -204,4 +224,55 @@ p {
   transform: translateY(-50%); 
   z-index: 1;
 }
+/* COMMISSION SWIPER SECTION START */
+#CommissionSection {
+  	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 800px;
+	background: radial-gradient(50% 50% at 50% 50%, #9800e0 25.95%, #53007a 100%);
+	
+}
+.swiper {
+	padding-bottom: 50px; /* Space for pagination */
+}
+.comm-card {
+  width: 320px; 
+  height: 500px; 
+  border-radius: 10px;
+  font-family: "Coustard", serif;
+  color: black;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.comm-card .card-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	position: relative;
+}
+.comm-card img {
+	width: 200px;
+	height: 200px;
+	
+}
+.comm-card button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	border-color: transparent;
+	border-radius: 10px;
+	margin-left: 20px
+}
+.swiper-pagination {
+  bottom: px !important; /* Adjust as needed */
+}
+
 
