@@ -1,278 +1,271 @@
 .gochi-hand-regular {
-	font-family: "Gochi Hand", cursive;
-	font-weight: 400;
-	font-style: normal;
-  }
-  .coustard-regular {
-	  font-family: "Coustard", serif;
-	  font-weight: 400;
-	  font-style: normal;
-	}
-	
-	.coustard-black {
-	  font-family: "Coustard", serif;
-	  font-weight: 900;
-	  font-style: normal;
-	}
-	
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.coustard-regular {
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.coustard-black {
+  font-family: "Coustard", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
-	background: #030239;	
+  background: #030239;
 }
 h1 {
-	font-family: "Gochi Hand", cursive;
-	font-size: 50px
+  font-family: "Gochi Hand", cursive;
+  font-size: 50px;
 }
 p {
-	font-family: "Coustard", serif;
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* NAVBAR CSS START */
-.nav-item a{
-	position: relative;
-	top: 3px;
-	margin-left: 15px;
-	margin-right: 15px;
-	
-	font-family: "Gochi Hand";
-	font-size: 35px;
-	text-shadow: -2px 4px 0px rgba(0, 0, 0, 0.25);
+.nav-item a {
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  font-family: "Gochi Hand";
+  font-size: 35px;
+  text-shadow: -2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #navContainer {
-	margin-right: 65px;
+  margin-right: 65px;
 }
-.brand-img, .navbar-brand {
-	position: relative;
-	width: clamp(30px, 45vh, 75px);
-	object-fit: cover;
-	left: 25px;
-	top: px;
+.brand-img,
+.navbar-brand {
+  position: relative;
+  width: clamp(30px, 45vh, 75px);
+  object-fit: cover;
+  left: 25px;
+  top: px;
 }
 
 .navbar-toggler {
-	position: relative;
-	color:white !important;
-	top: px;
+  position: relative;
+  color: white !important;
+  top: px;
 }
 
 .nav-link:hover {
-	color: black !important;
+  color: black !important;
 }
 
 .navbar-transparent {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-.nav-image{
-	width: 100%;
-	/*Makes it relative or not */
-	height: 250px;
-	object-fit: cover;
-	overflow: hidden;
-	
+.nav-image {
+  width: 100%;
+  /*Makes it relative or not */
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .overlay-nav {
-	padding: 0px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;	
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-.navbar-toggler-icon{
-	-webkit-filter: brightness(10);
-    filter: brightness(10);
+.navbar-toggler-icon {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
 }
 @media (max-width: 992px) {
-	#navbarNav {
-		position: relative;
-		border-radius: 0.5rem;
-	  	/* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); */
-	  	padding: 1rem 0;
-	  	margin-top: 0.5rem;
-	  	left: 30px;
-	  	padding-right: 0px;
-	  
-	}
-	.about{
-		background: url("imgs/DropdownCloud1.png");
-		background-position: left;
-		background-size: contain;
-		background-repeat: no-repeat;
-		
-	}
-	.commission{
-		background: url("imgs/DropdownCloud2trial.png");
-		background-position: left;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-	.contact{
-		background: url("imgs/DropdownCloudtrial3.png");
-		background-position: left;
-		background-size:contain;
-		background-repeat: no-repeat;
-	}
-	.brand-img {
-		left:0px;
-	}
-	.navbar-toggler {
-		left: 30px;
-	}
-	.nav-image{
-		height: 175px;
-	}
+  #navbarNav {
+    position: relative;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); */
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    left: 30px;
+    padding-right: 0px;
   }
+  .about {
+    background: url("imgOP/DropdownCloud1.webp");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .commission {
+    background: url("imgOP/DropdownCloud2trial.webp");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contact {
+    background: url("imgOP/DropdownCloudtrial3.webp");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .brand-img {
+    left: 0px;
+  }
+  .navbar-toggler {
+    left: 30px;
+  }
+  .nav-image {
+    height: 175px;
+  }
+}
 /* NAVBAR CSS END */
 
 /* HERO CSS START */
-#HeroSection{
-	/*Muting color a bit*/
-	background-color: rgba(40, 8, 8, 0.127); 
+#HeroSection {
+  /*Muting color a bit*/
+  background-color: rgba(40, 8, 8, 0.127);
 }
-.hero-img{
-	position: relative;
-	background-image: url("imgs/heroimage.png");
-	min-height: 75vh;
-	background-position: center;
-	background-size: auto; 
-  	background-repeat: no-repeat;
-  	background-attachment: fixed; /*Makes it so that the image moves with the user */
-  	margin-top: -130px; 
-  	z-index: -1; 
+.hero-img {
+  position: relative;
+  background-image: url("imgOP/heroimage.webp");
+  min-height: 75vh;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*Makes it so that the image moves with the user */
+  margin-top: -130px;
+  z-index: -1;
 }
 
-@media (max-width: 768px){
-	.hero-img {
-	background-image: url("imgs/heroimagesmall.png") !important;
-	  background-attachment: scroll; /* Fixed bg doesn't work well on mobile */
-	  background-size: cover;
-	  background-position: center;
-	  overflow: hidden;
-	  min-height: 60vh;
-	  margin-top: px;
-	  background-size: 120;
-	}
+@media (max-width: 768px) {
+  .hero-img {
+    background-image: url("imgOP/heroimagesmall.webp") !important;
+    background-attachment: scroll; /* Fixed bg doesn't work well on mobile */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-height: 60vh;
+    margin-top: px;
+    background-size: 120;
   }
-@media (max-width: 1025px) and (min-width: 769px){
-	.hero-img{
-		background-attachment: scroll; 
-		min-height: 40vh;
-		background-size: 150%;
-		background-position: center;
-	}
 }
-  /* HERO CSS END */
+@media (max-width: 1025px) and (min-width: 769px) {
+  .hero-img {
+    background-attachment: scroll;
+    min-height: 40vh;
+    background-size: 150%;
+    background-position: center;
+  }
+}
+/* HERO CSS END */
 .bottomCloud {
-    position: absolute;
-    bottom: 190px;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    z-index: 1; /* Ensure it stays above the hero image */
+  position: absolute;
+  bottom: 190px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  z-index: 1; /* Ensure it stays above the hero image */
 }
 
-  /* AB ME CSS START */
+/* AB ME CSS START */
 .abMeImg {
-	display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .abMeImg img {
-	box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	width: 200px;
-	margin-bottom: 50px;
+  box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  margin-bottom: 50px;
 }
 #HeroSection p {
-	padding-top: 50px;
-	top: px;
+  padding-top: 50px;
+  top: px;
 }
 
 #AboutMeSection {
-	position: relative;
-  	background-color: rgb(208, 68, 252);
- 	margin-top: 0px; /* Pulls section up to overlap hero */
-  	padding-top: 50px; /* Makes space for the cloud */
+  position: relative;
+  background-color: rgb(208, 68, 252);
+  margin-top: 0px; /* Pulls section up to overlap hero */
+  padding-top: 50px; /* Makes space for the cloud */
 }
 
 @media (min-width: 768px) {
-#AboutMeSection .container2{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+  #AboutMeSection .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.abMeImg {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 50px;
-}
+  .abMeImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 .cloud-bottom {
   position: absolute;
   top: -60px;
   left: 0;
   width: 100%;
-  height: 250px; 
-  background-image: url('imgs/bottomCluds.png');
+  height: 250px;
+  background-image: url("imgs/bottomCluds.png");
   background-size: cover;
   background-position: top;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   z-index: 1;
 }
 /* COMMISSION SWIPER SECTION START */
 #CommissionSection {
-  	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 800px;
-	background: radial-gradient(50% 50% at 50% 50%, #9800e0 25.95%, #53007a 100%);
-	
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  background: radial-gradient(50% 50% at 50% 50%, #9800e0 25.95%, #53007a 100%);
 }
 .swiper {
-	padding-bottom: 50px; /* Space for pagination */
+  padding-bottom: 50px; /* Space for pagination */
 }
 .comm-card {
-  width: 320px; 
-  height: 500px; 
+  width: 320px;
+  height: 500px;
   border-radius: 10px;
   font-family: "Coustard", serif;
   color: black;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  
 }
 
-.comm-card .card-content{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 30px;
-	position: relative;
+.comm-card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
 }
 .comm-card img {
-	width: 200px;
-	height: 200px;
-	
+  width: 200px;
+  height: 200px;
 }
 .comm-card button {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 15px;
-	padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
 
-	border-color: transparent;
-	border-radius: 10px;
-	margin-left: 20px
+  border-color: transparent;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 .swiper-pagination {
   bottom: px !important; /* Adjust as needed */
 }
-
-
