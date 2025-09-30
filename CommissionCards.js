@@ -4,7 +4,7 @@ const CommissionCards = () => {
         {
             id: 1,
             title: "Emotes Pack",
-            image: "commissionIMG/emotes.jpg",
+            image: "imgOP/emotes.webp",
             description: "Get a set of 3 high-quality emotes for 9 dollars. Can be used for Twitch, Discord, or other platforms.",
             price: "$9",
             bgColor: '#D850DD'
@@ -12,7 +12,7 @@ const CommissionCards = () => {
         {
             id: 2,
             title: "Full Body Drawing",
-            image: "commissionIMG/fullBody.png",
+            image: "imgOP/fullBody.webp",
             description: "Full character design with add-ons for extra characters, complex backgrounds, and shading styles",
             price: "$70",
             bgColor: '#B628BB'
@@ -20,7 +20,7 @@ const CommissionCards = () => {
         {
             id: 3,
             title: "Half Body Drawing",
-            image: "commissionIMG/halfBody.jpg",
+            image: "imgOP/halfBody.webp",
             description: "Hips up drawing with add-ons for extra characters, complex backgrounds, and shading styles.",
             price: "$50",
             bgColor: '#830488'
@@ -28,7 +28,7 @@ const CommissionCards = () => {
         {
             id: 4,
             title: "Headshot Drawing",
-            image: "commissionIMG/headshot.jpg",
+            image: "imgOP/headshot.webp",
             description: "Headshot drawing with add-ons for extra characters, complex backgrounds, and shading styles.",
             price: "$30",
             bgColor: '#530488'
@@ -36,7 +36,7 @@ const CommissionCards = () => {
         {
             id: 5,
             title: "Landscape Painting",
-            image: "commissionIMG/reference.png",
+            image: "imgOP/reference.webp",
             description: "A reference sheet of your character with palette, weapons, etc. Poses, backgrounds, and details available.",
             price: "$100",
             bgColor: '#181473'
@@ -44,7 +44,7 @@ const CommissionCards = () => {
         {
             id: 6,
             title: "Chibi Drawing",
-            image: "commissionIMG/chibi.png",
+            image: "imgOP/chibi.webp",
             description: "A cute chibi version of your character. Great for icons, stickers, and fun art pieces.",
             price: "$20",
             bgColor: '#351473ff'
@@ -317,4 +317,5 @@ return (
 
 // Render the component
 const root = ReactDOM.createRoot(document.getElementById('react-card'));
+
 root.render(<CommissionCards />);
