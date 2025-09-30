@@ -16,7 +16,7 @@
 	}
 	
 body {
-	background: #030239;	
+	background: url('imgs/BackgroundColor_.png');	
 }
 h1 {
 	font-family: "Gochi Hand", cursive;
@@ -127,7 +127,25 @@ p {
 	}
   }
 /* NAVBAR CSS END */
-
+/* .blur-overlay {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+.blur-overlay::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 /* HERO CSS START */
 #HeroSection{
 	/*Muting color a bit*/
@@ -181,10 +199,13 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .abMeImg img {
-	box-shadow: 7px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 90px;
+	background-color: white;
 	width: 200px;
-	margin-bottom: 50px;
+	box-shadow: #53007a 0px 3px 8px;
+	margin-bottom: 60px;
 }
 #HeroSection p {
 	padding-top: 50px;
@@ -193,11 +214,18 @@ p {
 
 #AboutMeSection {
 	position: relative;
-  	background-color: rgb(208, 68, 252);
+  	background: url('imgs/BackgroundColor_.png');
  	margin-top: 0px; /* Pulls section up to overlap hero */
   	padding-top: 50px; /* Makes space for the cloud */
 }
-
+#AboutMeSection p{
+	position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    border-radius: 10px;
+	text-align: center;
+}
 @media (min-width: 768px) {
 #AboutMeSection .container2{
 	display: flex;
@@ -209,7 +237,6 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
 }
 }
 .cloud-bottom {
@@ -226,53 +253,224 @@ p {
 }
 /* COMMISSION SWIPER SECTION START */
 #CommissionSection {
-  	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 800px;
-	background: radial-gradient(50% 50% at 50% 50%, #9800e0 25.95%, #53007a 100%);
-	
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 800px;
+    background: radial-gradient(50% 50% at 50% 50%, #9800e0 25.95%, #53007a 100%);
+    padding: 40px 0;
 }
-.swiper {
-	padding-bottom: 50px; /* Space for pagination */
+
+/* Commission Cards Grid Container */
+#react-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+/* Commission Cards */
 .comm-card {
-  width: 320px; 
-  height: 500px; 
-  border-radius: 10px;
-  font-family: "Coustard", serif;
-  color: black;
-  margin: 0 auto; 
-  display: flex;
-  flex-direction: column;
-  
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    font-family: "Coustard", serif;
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.comm-card .card-content{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 30px;
-	position: relative;
+.comm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
 }
+
+.comm-card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    flex: 1;
+    justify-content: space-between;
+}
+
 .comm-card img {
-	width: 200px;
-	height: 200px;
-	
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
+
 .comm-card button {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 15px;
-	padding-left: 15px;
-
-	border-color: transparent;
-	border-radius: 10px;
-	margin-left: 20px
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-left: 0px;
+    background-color: #9800e0;
+    color: white;
+    font-family: "Coustard", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
 }
-.swiper-pagination {
-  bottom: px !important; /* Adjust as needed */
+
+.comm-card button:hover {
+    background-color: #7a00b3;
+}
+
+/* Grid Layout - Updated for responsive behavior */
+.commission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Success Message Animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    animation: fadeInOut 3s ease forwards;
+    font-family: "Coustard", serif;
 }
 
 
+/* Desktop (default): 3 cards per row */
+@media (min-width: 1025px) {
+    .commission-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .commission-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+    }
+    
+    .comm-card {
+        width: 100%;
+        max-width: 320px; 
+    }
+}
+
+/* Mobile: 1 card per row, centered */
+@media (max-width: 768px) {
+    #CommissionSection {
+        min-height: 700px;
+        padding: 30px 0;
+    }
+    
+    .commission-grid {
+        grid-template-columns: 1fr;
+        justify-items: center; 
+        gap: 25px;
+        padding: 15px;
+    }
+    
+    .comm-card {
+        width: 100%;
+        max-width: 320px; 
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    #CommissionSection {
+        min-height: 650px;
+        padding: 20px 0;
+
+    }
+    
+    .commission-grid {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .comm-card {
+        height: 450px;
+        max-width: 300px; 
+    }
+    
+    .comm-card img {
+        height: 180px;
+    }
+    
+    .comm-card .card-content {
+        padding: 20px;
+    }
+}
+
+/* ensure proper spacing for the section title */
+#CommissionSection h1 {
+    margin-bottom: 30px;
+    font-family: "Gochi Hand", cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* additional CSS classes for the React component */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #53007a;
+    font-size: 18px;
+    font-family: "Coustard", serif;
+	text-align: center;
+}
+
+.comm-card h3 {
+    font-family: "Gochi Hand", cursive;
+    font-size: 24px;
+    color: #53007a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.comm-card p {
+    font-family: "Coustard", serif;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    flex: 1;
+}
